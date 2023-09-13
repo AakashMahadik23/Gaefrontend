@@ -9,7 +9,7 @@ function ShowBookList() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:3000/api/books')
+      .get('https://20230911t164118-dot-mern-books-app.uc.r.appspot.com/api/books')
       .then((res) => {
         setBooks(res.data);
       })

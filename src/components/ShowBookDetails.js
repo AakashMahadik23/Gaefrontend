@@ -11,7 +11,7 @@ function ShowBookDetails(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/books/${id}`)
+      .get(`https://20230911t164118-dot-mern-books-app.uc.r.appspot.com/api/books/${id}`)
       .then((res) => {
         setBook(res.data);
       })
@@ -22,7 +22,7 @@ function ShowBookDetails(props) {
 
   const onDeleteClick = (id) => {
     axios
-      .delete(`http://localhost:3000/api/books/${id}`)
+      .delete(`https://20230911t164118-dot-mern-books-app.uc.r.appspot.com/api/books/${id}`)
       .then((res) => {
         navigate('/');
       })

@@ -24,7 +24,7 @@ const CreateBook = (props) => {
     e.preventDefault();
 
     axios
-      .post('http://localhost:3000/api/books/addBook', book)
+      .post('https://20230911t164118-dot-mern-books-app.uc.r.appspot.com/api/books/addBook', book)
       .then((res) => {
         setBook({
           title: '',

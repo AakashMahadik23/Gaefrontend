@@ -18,7 +18,7 @@ function UpdateBookInfo(props) {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/books/${id}`)
+      .get(`https://20230911t164118-dot-mern-books-app.uc.r.appspot.com/api/books/${id}`)
       .then((res) => {
         setBook({
           title: res.data.title,
@@ -51,7 +51,7 @@ function UpdateBookInfo(props) {
     };
 
     axios
-      .put(`http://localhost:3000/api/books/${id}`, data)
+      .put(`https://20230911t164118-dot-mern-books-app.uc.r.appspot.com/api/books/${id}`, data)
       .then((res) => {
         navigate(`/show-book/${id}`);
       })
